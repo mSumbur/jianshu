@@ -18,11 +18,9 @@ export default (state = defaultState, action) => {
         searchInfo: action.data,
         totalPage: action.totalPage
       })
-      // state.set('searchInfo', action.data).set('totalPage', action.totalPage);
     case constants.MOUSE_IN: 
       return state.set('mouseIn', !state.get('mouseIn'));
     case constants.CHANGE_PAGE:
-      // let temp = state.get('page') < state.get('totalPage') ? state.get('page') + 1 : 1;
       return state.set('page', action.page);
     default:
       return state;

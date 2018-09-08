@@ -18,7 +18,7 @@ import {
 
 class Header extends Component {
   render() {
-    const { focused, handleInputFocusOrBlur } = this.props;
+    const { focused, searchInfo, handleInputFocusOrBlur } = this.props;
     return (
       <HeaderWrapper>
         <Logo />
@@ -32,10 +32,10 @@ class Header extends Component {
           <SearchWrapper>
             <NavSearch
               className={focused ? 'focused' : ''}
-              onFocus={handleInputFocusOrBlur}
+              onFocus={() => handleInputFocusOrBlur(searchInfo)}
               onBlur={handleInputFocusOrBlur}
             ></NavSearch>
-            <i className={focused ? 'focused iconfont' : 'iconfont'}>&#xe614;</i>
+            <i className={focused ? 'focused iconfont search-icon' : 'iconfont search-icon'}>&#xe614;</i>
             {this.getSearchInfo()}
           </SearchWrapper>
         </Nav>
@@ -66,7 +66,9 @@ class Header extends Component {
       <SearchInfo onMouseEnter={handleOnMouseIn} onMouseLeave={handleOnMouseIn}>
         <SearchInfoTitle>
           热门搜索
-                <SearchInfoSwitch onClick={() => { handleChangeInfo(page, totalPage) }}>换一批</SearchInfoSwitch>
+                <SearchInfoSwitch onClick={() => handleChangeInfo(page, totalPage, this.spin)}>
+                <i ref={spin => this.spin = spin} className="iconfont spin">&#xe851;</i>换一批
+                </SearchInfoSwitch>
         </SearchInfoTitle>
         <div>{showList}</div>
       </SearchInfo>
@@ -86,14 +88,19 @@ const mapStateToProps = (state) => {
 
 const mapDispathToProps = (dispatch) => {
   return {
-    handleInputFocusOrBlur() {
-      dispatch(actionCreators.getSearchInfo());
+    handleInputFocusOrBlur(searchInfo) {
+      searchInfo.size === 0 && dispatch(actionCreators.getSearchInfo())
       dispatch(actionCreators.searchFocusOrBlur());
     },
     handleOnMouseIn() {
       dispatch(actionCreators.mouseIn());
     },
-    handleChangeInfo(page, totalPage) {
+    handleChangeInfo(page, totalPage, spin) {
+      // 换一批动画效果
+      let originAngle = spin.style.transform.replace(/\D/ig, '');
+      originAngle = parseInt(originAngle, 10) ? 0 : 360;        
+      spin.style.transform = 'rotate(' + originAngle + 'deg)';
+
       let temp = page < totalPage ? page + 1 : 1;
       dispatch(actionCreators.changePage(temp));
     }
