@@ -15,7 +15,6 @@ export const searchFocusOrBlur = () => ({
 export const getSearchInfo = () => {
   return (dispatch) => {
     axios('/api/searchInfo.json').then((res) => {
-      console.log(res.data.data.length)
       dispatch(changeSearchInfo(res.data.data))
     }).catch((e) => {
       console.log('error', e)

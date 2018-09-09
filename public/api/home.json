@@ -1,0 +1,144 @@
+{
+  "success": true,
+  "data": {
+    "topicList": [
+      {
+        "id": 1,
+        "title": "图书",
+        "imgUrl": "/api/topicPic/dushu.jpg"
+      },
+      {
+        "id": 2,
+        "title": "故事",
+        "imgUrl": "/api/topicPic/gushi.jpg"
+      },
+      {
+        "id": 3,
+        "title": "@IT-互联网",
+        "imgUrl": "/api/topicPic/it.jpg"
+      },
+      {
+        "id": 4,
+        "title": "摄影",
+        "imgUrl": "/api/topicPic/sheying.jpg"
+      },
+      {
+        "id": 5,
+        "title": "旅行",
+        "imgUrl": "/api/topicPic/lvxing.png"
+      },
+      {
+        "id": 6,
+        "title": "电影",
+        "imgUrl": "/api/topicPic/dianying.jpg"
+      },
+      {
+        "id": 7,
+        "title": "漫画",
+        "imgUrl": "/api/topicPic/manhua.jpg"
+      }
+    ],
+    "articleList": [
+      {
+        "id": 0,
+        "title": "《创客：新工业革命》读书笔记（第七章）（19组）",
+        "content": "【先修要点】  原子世界指的是以原子作为基本组成单位的物质世界,它是看得见、摸得着的实体。比特世界是指以比特作为基本表示单位的精神世界,它是无形",
+        "imgUrl": "/api/articlePic.jpg"
+      },
+      {
+        "id": 1,
+        "title": "《创客：新工业革命》读书笔记（第七章）（19组）",
+        "content": "【先修要点】  原子世界指的是以原子作为基本组成单位的物质世界,它是看得见、摸得着的实体。比特世界是指以比特作为基本表示单位的精神世界,它是无形",
+        "imgUrl": "/api/articlePic.jpg"
+      },
+      {
+        "id": 2,
+        "title": "《创客：新工业革命》读书笔记（第七章）（19组）",
+        "content": "【先修要点】  原子世界指的是以原子作为基本组成单位的物质世界,它是看得见、摸得着的实体。比特世界是指以比特作为基本表示单位的精神世界,它是无形",
+        "imgUrl": "/api/articlePic.jpg"
+      },
+      {
+        "id": 3,
+        "title": "《创客：新工业革命》读书笔记（第七章）（19组）",
+        "content": "【先修要点】  原子世界指的是以原子作为基本组成单位的物质世界,它是看得见、摸得着的实体。比特世界是指以比特作为基本表示单位的精神世界,它是无形",
+        "imgUrl": "/api/articlePic.jpg"
+      },
+      {
+        "id": 4,
+        "title": "《创客：新工业革命》读书笔记（第七章）（19组）",
+        "content": "【先修要点】  原子世界指的是以原子作为基本组成单位的物质世界,它是看得见、摸得着的实体。比特世界是指以比特作为基本表示单位的精神世界,它是无形",
+        "imgUrl": "/api/articlePic.jpg"
+      },
+      {
+        "id": 5,
+        "title": "《创客：新工业革命》读书笔记（第七章）（19组）",
+        "content": "【先修要点】  原子世界指的是以原子作为基本组成单位的物质世界,它是看得见、摸得着的实体。比特世界是指以比特作为基本表示单位的精神世界,它是无形",
+        "imgUrl": "/api/articlePic.jpg"
+      }
+    ],
+    "recommendList": [
+      {
+        "id": 1,
+        "title": "7日热门",
+        "imgUrl": "/api/recommendPic/1.png"
+      },
+      {
+        "id": 2,
+        "title": "30日热门",
+        "imgUrl": "/api/recommendPic/2.png"
+      },
+      {
+        "id": 3,
+        "title": "优选连载",
+        "imgUrl": "/api/recommendPic/3.png"
+      },
+      {
+        "id": 4,
+        "title": "简书版权",
+        "imgUrl": "/api/recommendPic/4.png"
+      },
+      {
+        "id": 5,
+        "title": "简书大学堂",
+        "imgUrl": "/api/recommendPic/5.png"
+      }
+    ],
+    "writerList": [
+      {
+        "id": 1,
+        "name": "徐林Grace",
+        "pic": "/api/writerPic/1.webp",
+        "write": "481700",
+        "likes": "4300"
+      },
+      {
+        "id": 2,
+        "name": "格列柯南",
+        "pic": "/api/writerPic/2.webp",
+        "write": "581900",
+        "likes": "14400"
+      },
+      {
+        "id": 3,
+        "name": "宇文散",
+        "pic": "/api/writerPic/3.webp",
+        "write": "103600",
+        "likes": "239"
+      },
+      {
+        "id": 4,
+        "name": "一只支",
+        "pic": "/api/writerPic/4.webp",
+        "write": "633800",
+        "likes": "1500"
+      },
+      {
+        "id": 5,
+        "name": "只有一半影子的人",
+        "pic": "/api/writerPic/5.webp",
+        "write": "223400",
+        "likes": "657"
+      }
+    ]
+  }
+}
